@@ -1,0 +1,154 @@
+h1, h2 {
+    color: whitesmoke;
+    font-family: Bahnschrift;
+}
+
+h1 {
+    font-size: 100px;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+body {
+    /* background-color: #212121; */
+    background-color: #002b36;
+    font-family: Bahnschrift;
+    margin: 0;
+}
+
+
+
+p {
+    font-size: 20px;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+    margin: 15px;
+    font-family: Bahnschrift;
+}
+
+a {
+    color: whitesmoke;
+    font-size: 25px;
+    font-family: Bahnschrift;
+    align: center;
+}
+
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+div {
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: black;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 400px;
+    transition: 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    overflow: hidden;
+}
+
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.button:hover span {
+    padding-right: 25px;
+}
+
+.button:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+.button:after {
+    content: "";
+    background: #f1f1f1;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+}
+
+.button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+}
+
+img {
+    width: 100%;
+    max-width: 1050px;
+    align-content: center;
+}
+
+video {
+    width: 100%;
+    max-width: 1050px;
+    align-content: center;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
