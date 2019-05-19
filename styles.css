@@ -152,3 +152,9 @@ video {
     margin-right: auto;
     width: 50%;
 }
+
+iframe: {
+    max-width: 1440px;
+    max-height: 810px;
+}
+    
